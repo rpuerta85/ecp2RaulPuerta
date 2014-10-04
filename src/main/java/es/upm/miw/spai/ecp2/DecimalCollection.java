@@ -35,4 +35,15 @@ public class DecimalCollection {
         return higher;
     }
 
+	public List<Double> getCollection() {
+		return collection;
+	}
+
+	public void setCollection(List<Double> collection) {
+		this.collection = collection;
+	}
+    
+
+    
+    
 }

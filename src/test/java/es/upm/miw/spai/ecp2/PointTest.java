@@ -1,6 +1,7 @@
 package es.upm.miw.spai.ecp2;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -47,5 +48,7 @@ public class PointTest {
     public void testToString() {
         assertEquals("Point[2,3]", pt.toString());
     }
-
+   
+    
+    
 }
