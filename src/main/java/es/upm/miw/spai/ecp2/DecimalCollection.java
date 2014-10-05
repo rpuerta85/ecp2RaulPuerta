@@ -43,6 +43,13 @@ public class DecimalCollection {
 		this.collection = collection;
 	}
     
+	public double multiplica() {
+        double producto = 0;
+        for (double item : this.collection) {
+            producto *= item;
+        }
+        return producto;
+    }
 
     
     
