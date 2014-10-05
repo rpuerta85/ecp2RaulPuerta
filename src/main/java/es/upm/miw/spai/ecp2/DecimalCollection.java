@@ -29,8 +29,9 @@ public class DecimalCollection {
     public double higher() {
         double higher = Double.NEGATIVE_INFINITY;
         for (double item : this.collection) {
-            if (item > higher)
+            if (item > higher) {
                 higher = item;
+            } 
         }
         return higher;
     }
