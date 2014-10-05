@@ -15,17 +15,17 @@ public class DecimalCollectionTest {
 	    
 	 
 	 
-		@Before
-		 public void before() {
-			collection =  new DecimalCollection();
-			collection.add(1d);
-			collection.add(2d);
-			collection.add(3d);
-		 }
+    @Before
+	public void before() {
+	    collection =  new DecimalCollection();
+		collection.add(1d);
+		collection.add(2d);
+		collection.add(3d);
+	}
 		
 	 @Test
 	 public void testDecimalCollection() {
-		//TODO
+		
 		 double elemento1=collection.getCollection().get(0);
 	     double elemento2=collection.getCollection().get(1);
 		 double elemento3=collection.getCollection().get(2);
