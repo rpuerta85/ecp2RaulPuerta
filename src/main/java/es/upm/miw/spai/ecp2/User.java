@@ -1,21 +1,25 @@
 package es.upm.miw.spai.ecp2;
 
+
 public class User {
     private int number;
 
     private String name;
 
     private String familyName;
+    
+    private String domicilio;
 
     private String format(String string) {
         string = string.trim();
         return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
     }
 
-    public User(int number, String name, String familyName) {
+    public User(int number, String name, String familyName, String domicilio) {
         this.number = number;
         this.name = this.format(name);
         this.familyName = this.format(familyName);
+        this.domicilio = this.format(domicilio);
     }
 
     public int getNumber() {
