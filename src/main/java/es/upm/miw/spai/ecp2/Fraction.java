@@ -65,4 +65,8 @@ public class Fraction {
                 * fraction.getDenominator());
     }
 
+    public Fraction sumaTest(Fraction fraction) {
+        return new Fraction(this.getNumerator() * fraction.getDenominator() + this.getDenominator()
+                * fraction.getNumerator(), this.getDenominator() * fraction.getDenominator());
+    }
 }
