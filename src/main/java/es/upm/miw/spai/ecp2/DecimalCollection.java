@@ -48,6 +48,7 @@ public class DecimalCollection {
         for (double item : this.collection) {
             producto *= item;
         }
+        
         return producto;
     }
 
