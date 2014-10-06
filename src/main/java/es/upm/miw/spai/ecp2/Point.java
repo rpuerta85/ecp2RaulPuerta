@@ -41,8 +41,8 @@ public class Point {
     public String toString() {
         return "Point[" + x + "," + y + "]";
     }
-    
 
-    
-    
+    public void add(Point point) {
+    }
+
 }
