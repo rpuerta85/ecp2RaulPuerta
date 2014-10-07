@@ -42,7 +42,8 @@ public class Point {
         return "Point[" + x + "," + y + "]";
     }
 
-    public void add(Point point) {
+    public Point add(Point point) {
+    	return new Point(this.getX()+point.getX(), this.getY()+point.getY());
     }
-
+    
 }
