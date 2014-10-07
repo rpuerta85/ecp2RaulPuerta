@@ -15,11 +15,11 @@ public class User {
         return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
     }
 
-    public User(int number, String name, String familyName, String domicilio) {
+    public User(int number, String name, String familyName) {
         this.number = number;
         this.name = this.format(name);
         this.familyName = this.format(familyName);
-        this.domicilio = this.format(domicilio);
+        
     }
 
     public int getNumber() {
