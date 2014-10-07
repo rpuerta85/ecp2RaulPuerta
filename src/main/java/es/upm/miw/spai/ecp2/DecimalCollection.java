@@ -1,3 +1,4 @@
+
 package es.upm.miw.spai.ecp2;
 
 import java.util.ArrayList;
@@ -8,7 +9,7 @@ public class DecimalCollection {
 
     public DecimalCollection() {
         this.collection = new ArrayList<Double>();
-    }
+    } 
 
     public void add(double value) {
         this.collection.add(value);
@@ -29,23 +30,30 @@ public class DecimalCollection {
     public double higher() {
         double higher = Double.NEGATIVE_INFINITY;
         for (double item : this.collection) {
-            if (item > higher) {
+            if (item > higher)
                 higher = item;
-            }
         }
         return higher;
     }
 
-    public List<Double> getCollection() {
-        return collection;
+	public List<Double> getCollection() {
+		return collection;
+	}
+
+	public void setCollection(List<Double> collection) {
+		this.collection = collection;
+	}
+    
+	public double multiplica() {
+        double producto = 0;
+        for (double item : this.collection) {
+            producto *= item;
+        }
+        
+        return producto;
     }
 
-    public void setCollection(List<Double> collection) {
-        this.collection = collection;
-    }
-
-    public Double multiplica() {
-        return null;
-    }
-
+    
+    
 }
+

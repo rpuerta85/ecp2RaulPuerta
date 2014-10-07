@@ -1,3 +1,4 @@
+
 package es.upm.miw.spai.ecp2;
 
 import static org.junit.Assert.assertEquals;
@@ -55,3 +56,4 @@ public class DecimalCollectionTest {
         assertEquals(6d, collection.multiplica(), 10e-5);
     }
 }
+
