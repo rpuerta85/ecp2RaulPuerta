@@ -32,6 +32,10 @@ public class FractionTest {
 		assertEquals(0.5, fraction.decimal(), 0.02);
 	 }
 	
+	@Test
+    public void testComparaFracciones(Fraction x, Fraction y) { 
+        assertEquals(false, fraction.comparaFracciones(new Fraction(1,2), new Fraction(3,4)));
+     }
 
 
 

@@ -60,4 +60,12 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public boolean comparaFracciones(Fraction x, Fraction y){
+        
+        if (x.numerator == y.numerator && x.denominator == y.denominator)
+            return true;
+        else
+            return false;
+    }
+    
 }
