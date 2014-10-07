@@ -37,6 +37,11 @@ public class FractionTest {
         assertEquals(false, fraction.comparaFracciones(new Fraction(1,2), new Fraction(3,4)));
      }
 
+	@Test
+    public void testMultiplicaFracciones(Fraction x, Fraction y) { 
+	    
+        assertEquals(new Fraction(1,6), fraction.multiplicaFracciones(new Fraction(1,2), new Fraction(1,3)));
+     }
 
 
 }

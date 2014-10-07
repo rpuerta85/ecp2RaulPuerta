@@ -68,4 +68,14 @@ public class Fraction {
             return false;
     }
     
+    public Fraction multiplicaFracciones(Fraction x, Fraction y){
+        Fraction producto = new Fraction();
+        
+        producto.numerator = x.numerator * y.numerator;
+        producto.denominator = x.denominator * y.denominator;
+        
+        return producto;
+    }
+    
+    
 }
