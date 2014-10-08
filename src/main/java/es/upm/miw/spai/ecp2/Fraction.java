@@ -69,4 +69,17 @@ public class Fraction {
         return new Fraction(this.getNumerator() * fraction.getDenominator() + this.getDenominator()
                 * fraction.getNumerator(), this.getDenominator() * fraction.getDenominator());
     }
+    public String compara(Fraction f){
+    	String resultado;
+    	double  fraccion1= this.decimal();
+    	double fraccion2 = f.decimal();
+    	if(fraccion1>fraccion2)
+    		resultado="1";
+    	else 
+    		if(fraccion1==fraccion2)
+    			resultado="0";
+    		else
+    			resultado="-1";
+      return resultado; 		
+    }
 }
