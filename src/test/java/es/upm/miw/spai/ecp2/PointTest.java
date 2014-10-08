@@ -50,8 +50,8 @@ public class PointTest {
 
     @Test
     public void sumaTest() {
-        pt.add(new Point(1, 2));
-        assertEquals(3, pt.getX());
-        assertEquals(5, pt.getY());
+        Point pointAdded = pt.add(new Point(1, 2));
+        assertEquals(3, pointAdded.getX());
+        assertEquals(5, pointAdded.getY());
     }
 }
