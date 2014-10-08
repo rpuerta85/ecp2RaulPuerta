@@ -1,13 +1,12 @@
 package es.upm.miw.spai.ecp2;
 
-
 public class User {
     private int number;
 
     private String name;
 
     private String familyName;
-    
+
     private String domicilio;
 
     private String format(String string) {
@@ -19,7 +18,13 @@ public class User {
         this.number = number;
         this.name = this.format(name);
         this.familyName = this.format(familyName);
-        this.domicilio = this.format(domicilio);
+    }
+
+    public User(int number, String name, String familyName, String address) {
+        this.number = number;
+        this.name = this.format(name);
+        this.familyName = this.format(familyName);
+        this.setDomicilio(this.format(address));
     }
 
     public int getNumber() {
@@ -40,5 +45,13 @@ public class User {
 
     public String initials() {
         return this.name.substring(0, 1) + ".";
+    }
+
+    public String getDomicilio() {
+        return domicilio;
+    }
+
+    public void setDomicilio(String domicilio) {
+        this.domicilio = domicilio;
     }
 }
