@@ -45,7 +45,7 @@ public class DecimalCollection {
 	}
     
 	public double multiplica() {
-        double producto = 0;
+        double producto = 1;
         for (double item : this.collection) {
             producto *= item;
         }

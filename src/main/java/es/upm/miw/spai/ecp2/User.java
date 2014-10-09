@@ -1,3 +1,4 @@
+
 package es.upm.miw.spai.ecp2;
 
 public class User {
@@ -55,3 +56,4 @@ public class User {
         this.domicilio = domicilio;
     }
 }
+

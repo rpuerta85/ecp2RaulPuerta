@@ -32,6 +32,7 @@ public class FractionTest {
 		assertEquals(0.5, fraction.decimal(), 0.02);
 	 }
 	
+
 	 @Test
 	    public void testSumaTestFraction(){
 	    	Fraction fraction2= new Fraction(2,3);
@@ -39,6 +40,18 @@ public class FractionTest {
 	       	assertEquals(7, fraction.sumaTest(fraction2).getNumerator());
 	    	assertEquals(6, fraction.sumaTest(fraction2).getDenominator());
 	    }
+
+	@Test
+    public void testComparaFracciones(){ 
+        assertEquals(true, ((fraction.compara(new Fraction(1,2))).equals("0")) );
+     }
+
+	@Test
+    public void testMultiplicaFracciones() { 
+	    
+        assertNotEquals(new Fraction(1,6), fraction.multiplica(new Fraction(1,2)));
+     }
+
 
 
 }
