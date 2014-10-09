@@ -53,6 +53,9 @@ public class DecimalCollectionTest {
 
     @Test
     public void multiplicaTest() {
+        System.out.println(6d-collection.multiplica());
+        System.out.println(6d);
+        System.out.println(collection.multiplica());
         assertEquals(6d, collection.multiplica(), 10e-5);
     }
 }
